@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Yashaswiiii8/MyMavenApp.git'
+                git branch: 'main', url: 'https://github.com/Yashaswiiii8/MyMavenApp.git'
             }
         }
 
@@ -22,7 +22,6 @@ pipeline {
                 sh 'mvn test'  // Run unit tests
             }
         }
-
         
         
        
